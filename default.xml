@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="organization"
-           fetch="../EramoxPersonalWork/"
+           fetch="../"
            review="https://review.gerrithub.io" />
   <remote  name="personal"
            fetch="../eramox/"
@@ -11,6 +11,6 @@
            remote="organization"
            sync-j="4" />
 
-  <project path="org/liberamox" remote="organization" name="liberamox" ></project>
+  <project path="org/liberamox" remote="organization" name="EramoxPersonalWork/liberamox" ></project>
 
 </manifest>
