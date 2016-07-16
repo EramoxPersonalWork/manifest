@@ -4,9 +4,6 @@
   <remote  name="organization"
            fetch="../EramoxPersonalWork/"
            review="https://review.gerrithub.io" />
-  <remote  name="personal"
-           fetch="../eramox/"
-           review="https://review.gerrithub.io" />
   <default revision="refs/heads/master"
            remote="organization"
            sync-j="4" />
