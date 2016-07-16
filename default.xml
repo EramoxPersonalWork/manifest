@@ -2,15 +2,16 @@
 <manifest>
 
   <remote  name="organization"
-           fetch="../git@github.com:EramoxPersonalWork/"
+           fetch="../EramoxPersonalWork/"
            review="https://review.gerrithub.io" />
   <remote  name="personal"
-           fetch="../git@github.com:"
+           fetch="../eramox/"
            review="https://review.gerrithub.io" />
   <default revision="refs/heads/master"
            remote="organization"
            sync-j="4" />
 
-  <project path="org/liberamox" remote="organization" name="liberamox" ></project>
+  <project path="liberamox" remote="organization" name="liberamox" ></project>
+  <project path="liberamox" remote="organization" name="liberamox" ></project>
 
 </manifest>
