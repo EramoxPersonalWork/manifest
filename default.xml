@@ -11,6 +11,6 @@
            remote="organization"
            sync-j="4" />
 
-  <project path="liberamox" remote="organization" name="liberamox" ></project>
+  <project path="org/liberamox" remote="organization" name="liberamox" ></project>
 
 </manifest>
