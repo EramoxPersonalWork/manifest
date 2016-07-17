@@ -17,7 +17,7 @@
            review="https://review.gerrithub.io" />
 -->
   <remote  name="organization"
-           fetch="../"
+           fetch="https://github.com/"
            review="https://review.gerrithub.io" />
 
 <!--
