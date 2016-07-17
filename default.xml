@@ -10,7 +10,7 @@
   - <name>   : An arbitrary name for the remote element
   - <fetch>  : Url to prepend.
 		It seems "../" use the url of the server used to checkout the manifest
-		It might be possible to use an arbitrary server 
+		It is possible to use any arbitrary server 
   - <review> : Url of the review server to use
   <remote  name="organization"
            fetch="../"
@@ -21,6 +21,9 @@
            review="https://review.gerrithub.io" />
 
 <!--
+  Default remote
+  This element is very important as it will make you work on top of a specific branch
+    In effect, all the patches will be as on top of the branch specified
 -->
   <default revision="refs/heads/master"
            remote="organization"
