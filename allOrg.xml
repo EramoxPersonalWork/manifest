@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!--
+  The full documentation can be found at https://gerrit.googlesource.com/git-repo/+/master/docs/manifest-format.txt
+-->
+
+<!--
+  Remote element
+  - <name>   : An arbitrary name for the remote element
+  - <fetch>  : Url to prepend.
+		It seems "../" use the url of the server used to checkout the manifest
+		It might be possible to use an arbitrary server 
+  - <review> : Url of the review server to use
+  <remote  name="organization"
+           fetch="../"
+           review="https://review.gerrithub.io" />
+-->
+  <remote  name="organization"
+           fetch="git@github.com:"
+           review="https://review.gerrithub.io" />
+
+<!--
+-->
+  <default revision="refs/heads/master"
+           remote="organization"
+           sync-j="4" />
+
+<!--
+  Project element
+	- <name>   : the "full name" of the project. 
+		      example: for a github project
+		               https://github.com/EramoxPersonalWork/manifest.git , repo wil find out it has to
+		               use https://github.com as server (because the config file was on it).
+			       the full name is then "EramoxPersonalWork/manifest" (omiting the .git)
+		     Note: It is possible to shorter the project name setting the common part in the <fetch>
+			   field of the remote. However, to check it the project workflow works correcly first
+
+	- <remote> : the name of the remote to use for this project
+
+	- <path>   : Path where the project will be checkout on the user platform
+
+  Note: the path is the property indicated first for usability, in effect, when having a lot of projects,
+	their path becomes a more meaningfull reference than their name. eg: it is possible to use the stdlib
+	multiple times in different path because their revision is different.
+
+  <project path="<path>" 
+	   remote="<remote>"
+	   name="<name>" />
+-->
+  <project path="liberamox" remote="organization" name="EramoxPersonalWork/liberamox" ></project>
+
+</manifest>
