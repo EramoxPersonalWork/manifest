@@ -9,8 +9,8 @@
   Remote element
   - <name>   : An arbitrary name for the remote element
   - <fetch>  : Url to prepend.
-		It seems "../" use the url of the server used to checkout the manifest
-		It might be possible to use an arbitrary server 
+		the use of "../<path>" use the url of the server used to checkout the manifest and append <path>
+		It is possible to use any protocol: https://, git://
   - <review> : Url of the review server to use
   <remote  name="organization"
            fetch="../"
@@ -21,6 +21,7 @@
            review="https://review.gerrithub.io" />
 
 <!--
+ Default element: The default set of configuration to use
 -->
   <default revision="refs/heads/master"
            remote="organization"
