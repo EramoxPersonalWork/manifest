@@ -10,7 +10,8 @@
   - <name>   : An arbitrary name for the remote element
   - <fetch>  : Url to prepend.
 		the use of "../<path>" use the url of the server used to checkout the manifest and append <path>
-		It is possible to use any protocol: https://, git://
+		It is possible to use any protocol: https://, git:// as long as the RFC format is respected:
+		<protocol>://<user>:<password>@<hostname>:<port>/<path>
   - <review> : Url of the review server to use
   <remote  name="organization"
            fetch="../"
